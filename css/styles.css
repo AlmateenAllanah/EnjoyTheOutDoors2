@@ -1,0 +1,210 @@
+/* body{
+    background: linear-gradient(rgba(0, 0, 0, 0.97),rgba(0, 0, 0, 0.78),rgba(0, 0, 0, 0.6),rgba(0,0,0,0))no-repeat, url("images/CDome-StoryImage.jpg") no-repeat;
+    background-size: cover;
+} */
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: green !important;
+}
+a {
+  text-decoration: none;
+}
+/********************************NATIONALPARK HTML****************************************** */
+/********************************NATIONALPARK HTML****************************************** */
+/********************************NATIONALPARK HTML****************************************** */
+
+.nationalpark {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.select-option label {
+  font-size: 1.5rem;
+}
+#search-options {
+  height: 2.5rem;
+}
+#locationSearchContainer {
+  display: none;
+}
+
+#typeSearchContainer {
+  display: none;
+}
+
+.search-con {
+  border: solid 2px;
+  width: 100%;
+  margin-top: 2rem;
+  max-width: 900px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: row;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.search-con label {
+  /* border: solid red; */
+  margin-bottom: 0;
+  width: fit-content;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+.search-con select {
+  min-width: 50%;
+  max-width: 500px;
+}
+
+#resultsRow {
+  /* border: solid; */
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  gap: 1rem;
+  justify-content: center;
+  width: 95%;
+  margin: 1rem auto;
+}
+.outerCardDiv {
+  border: solid 1px #475b63;
+  border-radius: 10px;
+  width: 450px;
+  height: fit-content;
+}
+
+.card-heading {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 0.5rem;
+  background-color: #eec643;
+}
+.card-heading h6 {
+  text-align: center;
+}
+.card-heading p {
+  text-align: center;
+}
+.visit {
+  text-decoration: none;
+  text-align: center;
+  color: #f8e8b4;
+}
+.card-footer {
+  display: flex;
+  justify-content: center;
+  background-color: #475b63 !important;
+  min-height: 20px;
+}
+
+@media screen and (min-width: 1000px) {
+  #resultsRow {
+    justify-content: flex-start;
+  }
+}
+
+/* MOUNTAIN PAGE DESIGN */
+
+.dropdown-container {
+  display: flex;
+  border: solid 2px;
+  width: 100%;
+  margin: 2rem auto;
+  max-width: 900px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: row;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.dropdown-container label {
+  /* border: solid red; */
+  margin-bottom: 0;
+  width: fit-content;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+.dropdown-container select {
+  min-width: 50%;
+  max-width: 500px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+.main-container h1 {
+  text-align: center;
+
+}
+
+.result-con {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #475b63;
+  border-radius: 20px;
+  border: transparent;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+.result-con h1{
+  color: white;
+}
+.result-con img{
+    width: 100%;
+    margin: 0 auto;
+    height: 400px;
+    /* border-radius: 10px; */
+}
+
+.result-con p{
+    /* border: solid; */
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    line-height: 2rem;
+}
+.result-con p span{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.mount-card-footer{
+    /* border: solid red; */
+    background-color: #eec643 !important;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.mount-card-footer p{
+    text-align: center;
+    font-weight: bold;
+}
+
+/* LOading icon */
+.loading{
+    display: none;
+    /* background-color: #475b63; */
+    color: #eec643;
+    padding: .3rem;
+    border: transparent;
+    border-radius: 5px;
+    font-size: 2.5rem;
+}
